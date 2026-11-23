@@ -1,0 +1,46 @@
+# 🌡️ 01 - ClimaLab ESP32 (Monitor Ambiental en la Nube)
+
+Estación meteorológica básica desarrollada con **ESP32** y un sensor digital **DHT11 / DHT22** que mide la temperatura y la humedad relativa del ambiente en tiempo real, enviando los datos por WiFi a un *dashboard* en la nube.
+
+---
+
+## 🎯 Objetivos del proyecto
+* Configurar la conectividad WiFi en una placa **ESP32 DevKit V1**.
+* Capturar lecturas digitales de temperatura (°C) y humedad (%).
+* Enviar telemetría periódica a una plataforma IoT en la nube (**Arduino Cloud** / **Blynk**).
+* Visualizar métricas en vivo, gráficas históricas y configurar alertas por umbral en el móvil.
+
+---
+
+## 🧰 Materiales necesarios
+
+| Componente | Especificación | Cantidad |
+| :--- | :--- | :---: |
+| **Microcontrolador** | ESP32 DevKit V1 (30 pines, WiFi + Bluetooth) | 1 |
+| **Sensor** | Módulo DHT11 (o DHT22) de 3 pines con resistencia integrada | 1 |
+| **Cableado** | Cables Dupont hembra-hembra | 3 |
+| **Alimentación / Datos** | Cable USB-C (o Micro-USB según modelo) | 1 |
+
+---
+
+## 🔌 Esquema de conexión (Pinout)
+
+> ⚠️ **Nota de seguridad:** Realizar todas las conexiones con la placa **desconectada** de la corriente. La ESP32 trabaja con lógica de **3,3 V**.
+
+| Pin en el módulo DHT11 | Pin en la ESP32 | Función |
+| :--- | :--- | :--- |
+| **`+` (VCC)** | **`3V3`** | Alimentación de 3,3 V |
+| **`-` (GND)** | **`GND`** | Tierra (común) |
+| **`OUT` (DATA)** | **`D4` (GPIO 4)** | Señal digital de datos |
+
+---
+
+## 📊 Funcionamiento y resultados esperados
+* **Monitorización en tiempo real:** Actualización automática de temperatura y humedad cada 5 segundos en la app móvil y navegador web.
+* **Histórico de datos:** Registro visual mediante gráficas de las variaciones térmicas a lo largo del día.
+* **Sistema de alertas:** Notificaciones *push* automáticas al superar los **30 °C** o descender del **30 %** de humedad.
+
+---
+
+## 📸 Capturas y evidencias
+*(Espacio reservado para añadir fotos del montaje físico y capturas del panel en la nube una vez finalizado).*
