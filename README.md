@@ -1,1 +1,1 @@
-# esp32-cloud-sensors
+# esp32-cloud-sensors-portfolio
